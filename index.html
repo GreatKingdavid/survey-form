@@ -2,39 +2,66 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <title>Survey Form</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survey-Form</title>
+  <link href="style.css" rel="stylesheet" />
 </head>
 
 <body>
-  <section>
-    <div>
-      <h1 id="title">
-        Survey Form
-      </h1>
-      <p id="description">
-        You will be helping us improve our platform by taking this survey.....
-      </p>
 
-
-    </div>
+  <body>
+    <h1 id="title">
+      FinePay Survey Form
+    </h1>
+    <p id="description">This survey helples us know how to serve tou better</p>
     <form id="survey-form">
-      <label>   Name:   <input id="name" type="text"/>
+      <label id="name-label">
+        <input id="name" placeholder="name" type="text" required/>
+      </label>
+      <label id="email-label"><input id="email" placeholder="email" type="email" required/></label><br/>
+      <label id="number-label"><input id="number" placeholder="number" type="number" min="16" max="60"/>
+      <label for="referrer"
+          >How did you hear about us?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">FinePay News</option>
+            <option value="2">FinePay YouTube Channel</option>
+            <option value="3">FinePay Forum</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+      <label>
+          Would you recommend FinePay to a friend?
+          <div>
+  <label>Definitely<input type="radio" value="a2" name="radio2"/></label>
+    <input type="radio" value="a2" name="radio2"/></label>/
+<div>
+<div>
+  <label>Maybe
+<input type="radio" value="a3" name="radio2"/></label>
+<input type="radio" value="a3" name="radio2"/></label>/
+<div>
 </label>
-      <label>   Email:   <input id="email" type="email"/>
+
+<label>
+  What would you like to see improved? (Check all that apply)
+  <input type="checkbox" value="Interface"/>Interface
+  <input type="checkbox" value="Update speed"/>Update speed
+  <input type="checkbox" value="Kcc"/>Kcc
+  <input type="checkbox" value="trensaction"/>Tresaction speed
+  <input type="checkbox" value="rate"/>Rate
 </label>
-      <label>   Number:   <input id="number" type="number"/>
-</label>
+<label for="bio"
+          >Any comments or suggestions?
+          <textarea
+            id="bio"
+            name="bio"
+            rows="3"
+            cols="30"
+            placeholder="Write your comment's here..."
+          ></textarea>
+        </label>
+      <input type="submit" id="submit"/>
     </form>
-  </section>
-
-</body>
-<html>
-</form>
-</h1>
-</div>
-</section>
-</body>
-
-</html>
+  </body>
